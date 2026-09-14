@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Outback</title>
+    <style>
+        nav{
+    background-color: white;;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* O fixed precisa disso para não encolher */
+    box-sizing: border-box; /* Garante que o padding não faça o menu vazar da tela */
+    z-index: 1000; /*diz ao navegador qual elemento fica na frente e qual fica atrás quando eles se cruzam. O elemento com o maior número sempre fica por cima.*/
+    border-radius: 5px;
+}
+nav > div{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: rgb(144, 24, 24);
+    margin-left: auto;
+    cursor: pointer;
+}
+#navpesquisa{
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    height: 20px;
+    background-color:rgb(239, 238, 238);
+}
+#navpesquisa::placeholder{
+    color: rgb(144, 24, 24);
+    font-size: 10px;
+}
+.ppp{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(168, 0, 0);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: rgb(248, 176, 21);
+    margin-top: 50px;
+}
+p{
+    color: rgb(239, 238, 238);
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+.fotoscardapio{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+   
+}
+.fotoscardapio img{
+    width: 650px;
+    height: auto;
+}
+figcaption{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.unidades{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 1px;
+}
+.unidades img{
+    width: 400px;
+    height: auto;
+
+}
+.unidades iframe{
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(144, 24, 24);
+}
+.video{
+    margin-top: 80px;
+}
+.footer {
+    background-color: white;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+.footer1{
+    background-color: red;
+    z-index: 1000;
+    position: relative;
+    margin-top: -20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./imagens/Outback_Logo_Vinho_Bege_1024x768-1024x768-1-230x210-removebg-preview.png" alt="Logo Outback" width="140px">
+
+            <div>
+                 <form>
+                    <input type="text" id="navpesquisa" placeholder="PESQUISAR">
+                </form>
+
+                <ul>
+                    <a href="./nossosProdutos.html" target="_blank"><li>NOSSOS PRODUTOS</li></a>
+                    <a href="./restaurantes.html" target="_blank"><li>RESTAURANTES</li></a>
+                    <a href="./delivery.html" target="_blank"><li>DELIVERY</li></a>
+                    <a href="./meuOutback.html" target="_blank"><li>MEU OUTBACK</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <img src="./imagens/banner_Boards_outback-2.jpg" alt="Outback" class="ppp">
+
+        <h1>Outback</h1>
+        <p>Inspirado no espírito aventureiro da Austrália, o Outback Steakhouse é muito mais do que um restaurante: é uma experiência. Somos reconhecidos mundialmente por nossos cortes de carne de alta qualidade, sabores marcantes e uma atmosfera descontraída. Do nosso tradicional pão australiano à famosa Bloomin' Onion, nosso compromisso é oferecer porções generosas e um atendimento caloroso para que cada visita seja inesquecível.</p>
+
+        <div class="fotoscardapio">
+            <img src="./imagens/Gemini_Generated_Image_f7sm7ef7sm7ef7sm.jpg" alt="cardapio">
+
+            <img src="./imagens/Gemini_Generated_Image_9js6zr9js6zr9js6.jpg" alt="cardapio">
+        </div>
+
+        
+
+        <h1>Unidades</h1>
+
+        <div class="unidades">
+            <figure>
+                <img src="./imagens/Gemini_Generated_Image_1sr02w1sr02w1sr0.jpg" alt="Unidade Shopping RioMar" class="riomar">
+                <figcaption>Shopping RioMar <br> <br>Av. República do Líbano, 251 - Piso L1 - Pina, Recife - PE, 51110-160 </figcaption><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.155973345182!2d-34.89661688981484!3d-8.085571191909214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3b2f5a4943%3A0xdb7c5c189cfc2810!2sOutback%20Steakhouse%20RioMar%20Recife!5e0!3m2!1spt-BR!2sbr!4v1789334802133!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </figure>
+        
+            <figure>
+                <img src="./imagens/Gemini_Generated_Image_oehp09oehp09oehp.jpg" alt="Unidade Shopping Tacaruna" class="tacaruna">
+                <figcaption>Shopping Tacaruna <br> <br> Av. Governador Agamenon Magalhães, 153 - Loja 33 Pavimento 01, Santo Amaro - Recife/PE</figcaption>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.626053270421!2d-34.87415968981532!3d-8.037433891956109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19e0df27a8ad%3A0x22d3d8ff9b9f199e!2sRestaurante%20Outback%20Steakhouse!5e0!3m2!1spt-BR!2sbr!4v1789335169108!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </figure>
+
+            <figure>
+                <img src="./imagens/Gemini_Generated_Image_rxpp4yrxpp4yrxpp.jpg" alt="Unidade Shopping Recife" class="recife">
+                <figcaption>Shopping Recife <br> <br> Rua Padre Carapuceiro, 777 Piso Padre Carapuceiro LUC PC 325 - Boa Viagem, Recife - PE, 51020-900</figcaption>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.8351291533822!2d-34.907550589814356!3d-8.118263591877367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fad6fa01587%3A0xa96883ebfb22977c!2sOutback%20Steakhouse!5e0!3m2!1spt-BR!2sbr!4v1789335286745!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </figure>
+
+
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5l1zZuytfdE?si=2XTIWt_J2Bq5w-nV&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> <br>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h2>Se beber, não dirija.</h2>
+        </div>
+        </div>
+        <div class="footer1">© 2026 Outback Steakhouse Todos os direitos reservados. Todas as marcas registradas são propriedade dos seus respectivos donos.</div>
+    </footer>
+
+
+</body>
+</html>
